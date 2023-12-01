@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------------------Score Board------------------->
+    <div class="scoreboard">
+        <div class="heading">
+            ROCK </br>
+            PAPER</br>
+            SCISSORS
+        </div>
+        <div class="compBox">
+            <div class="compText">COMPUTER SCORE</div>
+            <div class="compScore">0</div>
+        </div>        
+        <div class="myBox">
+            <div class="myText">YOUR </br> SCORE</div>
+            <div class="myScore">0</div>
+        </div>
+    </div>
+    
+    <!--------------------Game Play---------------------->
+    <div class="circle">
+        <div class="rockCircle">
+            <img src="rock.svg" alt="rock" id="rockCircle">
+        </div>
+        <img src="Line 1.svg" alt="">
+        <div class="scissorCircle">
+            <img src="scissor.svg" alt="scissor" id="scissorCircle">
+        </div>
+        <img src="Line 3.svg" alt="" id="line3">
+        <div class="paperCircle">
+            <img src="paper.svg" alt="paper" id="paperCircle">
+        </div> 
+        <img src="Line 2.svg" alt="" id="line2">
+    </div>
+
+    <!---------------------RulesBox Popup-------------------->
+    <div class="rulesbox" style="display: none;">
+        <h1>Game Rules</h1>
+        <ul class="ruleslist">
+            <li class="ruleitems">Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li class="ruleitems">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li class="ruleitems">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li class="ruleitems">If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+        <div class="cancel"> X </div>
+    </div>
+    <div class="popupbtn rules">RULES</div>
+
+    <!------------------Picked Text Part------------------>
+    <div class="picked">
+        <div class="you">YOU PICKED</div>
+        <div class="pc">PC PICKED</div>
+    </div>
+
+    <!---------------------Tie UP-------------------------->
+    <div class="tieup_page">
+        <div class="mychoice_tieup">        </div>
+
+        <div class="compchoice_tieup">      </div>
+        <div class="tietxt"> TIE UP </div>
+   
+    </div>
+
+    <!-------------Replay Button--------------->
+    <button class="replaybutton">REPLAY</button>
+
+    <!----------------------You Lost-------------------------->
+    <div class="youlost_page">
+        <div class="mychoice_ulost">    </div>
+
+        <div class="box1">
+            <div class="box2">
+                <div class="box3">
+                    <div class="compchoice_ulost">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="winlost_txt lost"> YOU LOST </div>
+        <div class="winlost_txt txt1"> AGAINST PC </div>
+    </div>
+
+    <!----------------------You WIN----------------------------->
+    <div class="youwin_page">
+        <div class="box11">
+            <div class="box21">
+                <div class="box31">
+                    <div class="youwin_mychoice">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="youwin_compchoice"> </div>
+        
+        <div class="winlost_txt win"> YOU WIN </div>
+        <div class="winlost_txt txt1"> AGAINST PC </div>
+        <div class="popupbtn nextbtn">NEXT</div>
+    </div>
+
+    <!--------------------Hurray Page--------------------------->
+    <div class="hurray_page">
+        <div class="hurray_icon">
+            <img src="Vector (1).png" alt="" id="trophy">
+        </div>
+        <div class="hurray_txt ht1">HURRAY!!</div>
+        <div class="hurray_txt ht2">YOU WON THE GAME</div> 
+    </div>
+
+    <script src="script_test.js"></script>
+</body>
+</html>
